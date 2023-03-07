@@ -9,6 +9,8 @@
         4) search details of any contact number.
         5) update details of any contact.
         6) delete whole phonebook (delete all contacts present in phonebook).
+        
+        Note: People who are using windows relapce the "clear" parameter in system fuction by "cls".
 */
 
 #include <stdio.h>
@@ -29,12 +31,14 @@ struct person
 typedef struct person person;
 
 // All function declaration.
+void start();
 void remove_all();
 void print_menu();
 void add_person();
 void list_record();
 void search_person();
 void remove_person();
+void remove_all();
 void update_person();
 void take_input(person *p);
 
